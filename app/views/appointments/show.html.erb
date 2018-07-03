@@ -1,0 +1,7 @@
+require 'pry'
+
+<h1>Appointment Information</h1>
+binding.pry
+Doctor: <%= link_to @appointment.doctor.name, @appointment.doctor %>
+Patient: <%= link_to @appointment.patient.name, @appointment.patient %>
+Date and Time: <%= @appointment.appointment_datetime.strftime("%B %d, %Y at %H:%M") %>
